@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #0d070e;
+}
+
+header{
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.area-b{
+  margin: 10px;
+  margin-right: 20px;
+}
+
+
+.bot{
+  text-decoration: none;
+  color: white;
+  padding:10px 10px;
+  border-radius: 5px;
+}
+
+.bot:hover{
+  padding:10px 10px;
+  border: 1px solid #8c24f5;
+  background: black;
+  border-radius: 5px;
+  color: #8c24f5;
+  transition-duration: 1s;
+}
+
+.box{
+  background-image: url(https://i.pinimg.com/originals/a2/94/b5/a294b593769b6bf61b55c152032e7459.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-item{
+  
+  height: 200px;
+  width: 300px;
+}
+
+.box-titulo{
+  font-size: 2.8em;
+  text-align: left;
+  color: #171836;
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 2px 2px #60fb7a,-2px -2px #a650fb ;
+  
+}
+
+.box-base{
+  text-align: center;
+}
+
+.informacao{
+  background-color: #0d070e;
+  display: flex;
+  flex-direction: column;
+}
+
+.informacao_td{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.informaca_gif{
+  border-radius: 50% 50%;
+  width: 100px;
+  
+}
+
+.informaca_tex{
+  width: 50%;
+  color: white;
+  
+}
+
+.pr{
+  margin: 35px 0;
+}
+
+.tr{
+  margin: 30px 0;
+}
+
+.redirecionamento{
+  
+}
+
+.redirecionamento-box{
+  display: flex;
+  justify-content: space-around;
+}
+
+.redirecionamento-img{
+  width: 500px;
+}
+
+.redirecionamento-bot{
+  background: gray;
+  width: 140px;
+  height: 38px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.redirecionamento-bot-int{
+  margin: auto;
+}
+
+.redirecionamento-bot-int > a{
+  font-size: 10px 1px;
+  text-decoration: none;
+  color: black;
+}
+
+.redirecionamento-bot-int-b{
+  background: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  margin: 5px;
+  display: flex;
+  
+}
+
+.far{
+  margin: auto;
+}
+
+footer{
+  background: black;
+  border: 1px solid white;
+  height: 10px;
+  width: 100%;
+}
