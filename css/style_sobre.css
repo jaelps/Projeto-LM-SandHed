@@ -47,7 +47,7 @@ header{
 
 /*Ilustração - fundo inicio*/
 .box{
-  background-image: url(https://i.pinimg.com/originals/a2/94/b5/a294b593769b6bf61b55c152032e7459.jpg);
+  background-image: url(http://pa1.narvii.com/6424/13c812ead1e0488042e0997852b63e3d8ce8dd54_00.gif);
   background-size: 100%;
   background-repeat: no-repeat;
   height: 100%;
@@ -92,11 +92,6 @@ header{
   padding: 20px;
 }
 
-.informaca_gif{
-  border-radius: 50% 50%;
-  width: 100px;
-  
-}
 
 .informaca_tex{
   width: 50%;
@@ -105,77 +100,13 @@ header{
   
 }
 
-.pr{
-  margin: 35px 0;
-}
-
-.tr{
-  margin: 30px 0;
-}
-
-.redirecionamento{
-  background: #010e03;
-  padding: 10px 0;
-}
-
-.redirecionamento-box{
-  display: flex;
-  flex-direction: column-reverse;
-  margin: 20px;
-}
-
-.redirecionamento-box > p{
-  background-color: white;
-  color: black;
-  border: 1px solid white;
-  box-shadow: 10px 10px red, -10px -10px red;
-  margin: 10px 0;
-  
-}
-
-.redirecionamento-img{
-  width: 500px;
-}
-
-.redirecionamento-bot{
-  background: gray;
-  width: 140px;
-  height: 38px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.redirecionamento-bot-int{
-  margin: auto;
-}
-
-.redirecionamento-bot-int > a{
-  font-size: 10px 1px;
-  text-decoration: none;
-  color: black;
-}
-
-.redirecionamento-bot-int-b{
-  background: white;
-  width: 28px;
-  height: 28px;
-  border-radius: 100%;
-  margin: 5px;
-  display: flex;
-  
-}
-
-.far{
-  margin: auto;
-}
-
 footer{
   background: black;
-  border: 1px solid white;
   height: 10px;
   width: 100%;
 }
+
+
 
 /* reservado para responsividade*/
 
@@ -194,12 +125,19 @@ footer{
 .bot:hover{
   padding:5px 5px;
 }
-  
+
   .box{
+  background-image: url(http://pa1.narvii.com/6424/13c812ead1e0488042e0997852b63e3d8ce8dd54_00.gif);
   background-size: 100%;
+  background-repeat: no-repeat;
+  height: 200px;
   width: 76%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 19px 10px 50px;
 }
+  
   .box-titulo{
   font-size: 1em;
 
@@ -216,25 +154,28 @@ footer{
   margin-bottom: 10px;
   padding: 20px;
   align-items: center;
-}
-  
-  .informaca_gif{
-  border-radius: 50% 50%;
-  width: 60px;
-  height: 50px;
+  background: #33095d;
   
 }
+  .fab{
+    color:black;
+    margin: 10px 10px 0px 10px;
+  }
+  
+  
 
   .informaca_tex{
-  width: 50%;
-  color: white;
-  font-size: 0.8rem;
+  width: 80%;
+  height: 100%;
+  color: black;
+  background: white;
+  font-size: 1rem;
+  border: 1px solid black;
+  padding: 10px;
+  box-shadow: 10px 10px black;
   
 }
 
-  .redirecionamento-box{
-    display: flex
-    flex-direction: column-reverse;
-}
+  
 
 }
