@@ -6,7 +6,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: #0d070e;
+  background-color: #2f0436;
 }
 
 /*header -- inicio*/
@@ -55,7 +55,6 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
 }
 
 .box-item{
@@ -90,11 +89,13 @@ header{
   justify-content: space-around;
   margin-bottom: 10px;
   padding: 20px;
+  align-items: center;
 }
 
 .informaca_gif{
   border-radius: 50% 50%;
   width: 100px;
+  height: 100px;
   
 }
 
@@ -114,8 +115,10 @@ header{
 }
 
 .redirecionamento{
-  background: #010e03;
+  background: #085558;
   padding: 10px 0;
+  display: flex;
+    align-items: center;
 }
 
 .redirecionamento-box{
@@ -124,16 +127,23 @@ header{
     margin: 20px;
     align-items: center;
     justify-content: space-around;
+    
 }
 
-.redirecionamento-box > p{
+.redirecionamento_vidio{
+  margin-right: 90px;
+}
+
+.redirecionamento_texto{
   background-color: white;
   color: black;
   border: 1px solid white;
   box-shadow: 10px 10px black;
-  margin: 10px 0;
   padding: 10px;
-  
+  width: 300px;
+  height: 130px;
+  margin-left: 90px;
+
 }
 
 .redirecionamento-img{
@@ -174,8 +184,7 @@ header{
 }
 
 .sandhed{
-  background: green;
-  height: 400px;
+  height: 300px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -193,29 +202,64 @@ header{
 }
 
 .sandhed_box{
-    border: 1px solid blue;
-    width: 50px;
+    width: 0px;
     padding: 10px;
-    background-color: rgba(128, 128, 128, 0.774);
+    background-color: #0000007d;;
+    margin: 0 0 0 150px;
 }
 
 .sandhed_base-tex {
-    width: 100px;
-    text-align: justify;
-    border: 1px solid blue;
-    background: black;
-    color: green;
+  width: 100px;
+  text-align: justify;
+  /* border: 1px solid blue; */
+  background: #767676ab;
+  color: rgb(0 0 0);
+  padding: 10px;
 }
 
 
 footer{
   background: black;
-  border: 1px solid white;
   height: 10px;
   width: 100%;
 }
 
 /* reservado para responsividade*/
+
+@media screen and (max-width: 1600px){
+  .box{
+    
+  }
+  
+  .informacao{
+  margin: 0 100px;
+  }
+
+  .redirecionamento{
+  margin: 0 100px;
+  height: 400px;
+  }
+
+  .redirecionamento-box > p{
+    width: 200px;
+  }
+
+  .informaca_tex{
+    width: 25%;
+  }
+
+  .sandhed{
+    height: 380px;
+    margin: 0 100px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .informaca_gif{
+    width: 90px;
+    height: 90px;
+  }
+}
 
 @media screen and (max-width: 320px){
   header{
@@ -245,6 +289,10 @@ footer{
   .box-item{
   height: 30%;
   width: 30%;
+}
+
+.informacao{
+  margin: 0 0;
 }
 
   .informacao_td{
@@ -277,24 +325,5 @@ footer{
 }
 
 
-@media screen and (max-width: 1600px){
-  .box{
-    background-size: 88.4%;
-  }
-  
-  .informacao{
-  margin: 0 100px;
-  }
 
-  .redirecionamento{
-  margin: 0 100px;
-  }
 
-  .redirecionamento-box > p{
-    width: 200px;
-  }
-
-  .sandhed{
-    margin: 0 100px;
-  }
-}
