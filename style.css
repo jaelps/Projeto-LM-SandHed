@@ -118,7 +118,8 @@ header{
   background: #085558;
   padding: 10px 0;
   display: flex;
-    align-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .redirecionamento-box{
@@ -199,6 +200,7 @@ header{
   text-shadow: 2px 2px #eeb927,-2px -2px #fb5050 ;
   font-weight: bold;
   font-family: 'Russo One', sans-serif;
+  text-align: center;
 }
 
 .sandhed_box{
@@ -317,10 +319,31 @@ footer{
   font-size: 0.8rem;
   
 }
+ .redirecionamento{
+  height: 400px;
+  margin: 0;
+ }
+ 
 
   .redirecionamento-box{
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .redirecionamento_texto {
+    width: 200px;
+    margin: 0 0 20px 0;
+    /*width="230 height="215" */
+  }
+
+  .sandhed{
+    margin: 0;
+    height: 400px;
+    width: 100%;
+  }
+
+  .sandhed_box{
+    margin: 0px;
   }
 }
 
