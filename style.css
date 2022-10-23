@@ -11,6 +11,13 @@ html, body {
 
 /*nav -- inicio*/
 
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 nav{
   background-color: black;
   width: 100%;
@@ -23,6 +30,7 @@ nav{
 .area-b{
   margin: 10px;
   margin-right: 20px;
+  display: flex;
 }
 
 
@@ -32,6 +40,7 @@ nav{
   padding:10px 10px;
   border-radius: 5px;
   font-size: 1rem;
+  list-style: none;
 }
 
 .bot:hover{
@@ -41,6 +50,11 @@ nav{
   border-radius: 5px;
   color: #8c24f5;
   transition-duration: 1s;
+}
+
+.primeriro, .segundo, .terceiro{
+  text-decoration: none;
+  color: white;
 }
 
 /*nav -- fim*/
@@ -206,7 +220,7 @@ nav{
 .sandhed_box{
     width: 0px;
     padding: 10px;
-    background-color: #0000007d;;
+    background-color: #0000007d;
     margin: 0 0 0 150px;
 }
 
@@ -229,17 +243,16 @@ footer{
 /* reservado para responsividade*/
 
 @media screen and (min-width: 1024px) and (max-width: 2560px){
-  .box{
-    
-  }
+  
   
   .informacao{
-  margin: 0 100px;
+    width: 80%;
+
   }
 
   .redirecionamento{
-  margin: 0 100px;
-  height: 400px;
+    height: 400px;
+    width: 80%;
   }
 
   .redirecionamento-box > p{
@@ -252,14 +265,36 @@ footer{
 
   .sandhed{
     height: 380px;
-    margin: 0 100px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 768px){
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .informacao{
+    width: 90%;
+  }
+  
   .informaca_gif{
     width: 90px;
     height: 90px;
+  }
+
+  .redirecionamento{
+    width: 90%;
+  }
+
+  .redirecionamento_texto{
+    margin-left: 20px;
+  }
+
+  .sandhed{
+    width: 100%;
   }
 }
 
@@ -281,20 +316,24 @@ footer{
   
   .box{
   background-size: 100%;
-  width: 78.5%;
-  padding: 10px 19px 10px 50px;
+  width: 100%;
+  height: 150px;
 }
   .box-titulo{
-  font-size: 1em;
+  font-size: 1.4em;
 
 }
   .box-item{
   height: 30%;
   width: 30%;
+  display: flex;
+    align-items: center;
 }
 
 .informacao{
   margin: 0 0;
+  width: 100%;
+
 }
 
   .informacao_td{
@@ -308,7 +347,7 @@ footer{
   
   .informaca_gif{
   border-radius: 50% 50%;
-  width: 60px;
+  width: 50px;
   height: 50px;
   
 }
@@ -322,6 +361,7 @@ footer{
  .redirecionamento{
   height: 400px;
   margin: 0;
+  width: 100%;
  }
  
 
