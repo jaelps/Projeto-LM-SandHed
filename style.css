@@ -9,6 +9,10 @@ html, body {
   background-color: #2f0436;
 }
 
+p {
+  font-family: 'Inconsolata', monospace;
+}
+
 /*nav -- inicio*/
 
 
@@ -158,6 +162,7 @@ nav{
   width: 300px;
   height: 130px;
   margin-left: 90px;
+  font-weight: bold;
 
 }
 
@@ -218,32 +223,54 @@ nav{
 }
 
 .sandhed_box{
-    width: 0px;
-    padding: 10px;
-    background-color: #0000007d;
-    margin: 0 0 0 150px;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: flex-end;
 }
 
 .sandhed_base-tex {
   width: 100px;
   text-align: justify;
   /* border: 1px solid blue; */
-  background: #767676ab;
+  background: rgba(255, 255, 255, 0.678);
   color: rgb(0 0 0);
-  padding: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.548);
+  font-weight: bold;
+}
+
+.sandhed_base-tex > a {
+  text-decoration: none;
+  color: green;
 }
 
 
 footer{
   background: black;
-  height: 10px;
+  height: 20px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.fab{
+  color: white;
+  font-size: 0.8rem;
+  margin: 5px;
 }
 
 /* reservado para responsividade*/
 
 @media screen and (min-width: 1024px) and (max-width: 2560px){
   
+
+  .box{
+    height: 380px;
+  }
   
   .informacao{
     width: 80%;
@@ -259,13 +286,29 @@ footer{
     width: 200px;
   }
 
+  .redirecionamento_texto{
+    height: 90px;
+  }
+
   .informaca_tex{
     width: 25%;
   }
 
   .sandhed{
-    height: 380px;
+    height: 500px;
     width: 100%;
+  }
+
+  .sandhed > h2{
+    font-size: 2.1rem;
+  }
+
+  footer{
+    height: 25px;
+  }
+
+  .fab{
+    font-size: 1rem;
   }
 }
 
@@ -291,10 +334,16 @@ footer{
 
   .redirecionamento_texto{
     margin-left: 20px;
+    height: 70px;
   }
 
   .sandhed{
     width: 100%;
+    height: 400px;
+  }
+
+  .sandhed_base-tex{
+    width: 200px;
   }
 }
 
@@ -358,6 +407,9 @@ footer{
   font-size: 0.8rem;
   
 }
+
+
+
  .redirecionamento{
   height: 400px;
   margin: 0;
@@ -373,17 +425,23 @@ footer{
   .redirecionamento_texto {
     width: 200px;
     margin: 0 0 20px 0;
+    height: 100px;
     /*width="230 height="215" */
   }
 
   .sandhed{
     margin: 0;
-    height: 400px;
+    height: 380px;
     width: 100%;
   }
 
   .sandhed_box{
     margin: 0px;
+  }
+
+  .sandhed_base-tex{
+    height: 190px;
+    font-size: 0.82rem;
   }
 }
 
