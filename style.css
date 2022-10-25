@@ -267,6 +267,9 @@ footer{
 
 @media screen and (min-width: 1024px) and (max-width: 2560px){
   
+  .bot{
+    font-size: 1.2rem;
+  }
 
   .box{
     height: 380px;

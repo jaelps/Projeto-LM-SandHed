@@ -161,6 +161,7 @@ label{
   padding: 5px;
   background: none;
   color: white;
+  width: 100%;
 }
 
 
@@ -191,11 +192,31 @@ label{
 .enviar:hover{
   padding:5px 5px;
   border: 1px solid #8c24f5;
-  background: #8c24f5;
+  background: #5d5763;
   border-radius: 5px;
   color: white;
   transition-duration: 1s;
   
+}
+
+.fim{
+  display: flex;
+  border: 1px solid #121212;
+  background: black;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-icon{
+  margin: 5px;
+}
+
+.fab{
+  color: white;
+  font-size: 1.3rem;
+  margin: 5px;
 }
 
 
@@ -209,14 +230,6 @@ label{
 	} 
 }
 
-
-
-footer{
-  background: black;
-  border: 1px solid #121212;
-  height: 20px;
-  width: 100%;
-}
 
 .bar-lif{
   width: 50px;
@@ -297,6 +310,14 @@ footer{
   .caixa-texto{
     width: 60%;
   }
+
+  .fim{
+    height: 25px;
+  }
+
+  .fab{
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px){
@@ -328,6 +349,11 @@ footer{
     height: 70%;
   }
 
-  
-           
+    .fim{
+      height: 18px;
+    }
+
+    .fab{
+      font-size: 0.7rem;
+    }     
 }
