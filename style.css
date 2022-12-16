@@ -1,6 +1,7 @@
-*{
+* {
   margin: 0;
-  border: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -246,21 +247,31 @@ nav{
   color: green;
 }
 
-
-footer{
-  background: black;
-  height: 20px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
+  #footer {
+  background: rgb(36, 34, 34);
+  
+  border: white 2px solid;
+  padding: 40px;
 }
 
-.fab{
+footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(36, 34, 34);
+}
+
+footer h1 {
+  display: block;
+
+}
+
+footer img {
+  cursor: pointer;
+  fill: white;
   color: white;
-  font-size: 0.8rem;
-  margin: 5px;
+  width: 40px;
+  margin: 10px;
 }
 
 /* reservado para responsividade*/
