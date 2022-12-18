@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
 }
 
 html,
@@ -38,16 +39,12 @@ nav {
   list-style: none;
 }
 
-.bot:hover {
-  padding: 10px 10px;
-  border: 1px solid #8c24f5;
-  background: black;
-  border-radius: 5px;
-  color: #8c24f5;
-  transition-duration: 1s;
+.primeiro:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
 }
 
-.primeriro,
+.primeiro,
 .segundo,
 .terceiro {
   text-decoration: none;
@@ -259,6 +256,34 @@ label {
   transition-duration: 1s;
 }*/
 
+/*=========FOOTER==========*/
+
+/*
+
+footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(36, 34, 34);
+  padding: 20px;
+}
+
+footer h1 {
+  color: white;
+  text-align: center;
+  background: rgb(36, 34, 34);
+  padding-top: 20px;
+}
+
+footer img {
+  cursor: pointer;
+  fill: white;
+  color: white;
+  width: 40px;
+  margin: 10px;
+  stroke: white;
+}*/
+
 .fim {
   display: flex;
   border: 1px solid #121212;
@@ -278,6 +303,7 @@ label {
   font-size: 1.3rem;
   margin: 5px;
 }
+
 
 @keyframes rota {
   0% {

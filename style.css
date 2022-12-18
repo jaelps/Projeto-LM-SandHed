@@ -59,7 +59,7 @@ nav{
   background-image: url(https://i.pinimg.com/originals/a2/94/b5/a294b593769b6bf61b55c152032e7459.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 300px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -125,6 +125,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .redirecionamento-box{
@@ -193,6 +194,7 @@ main {
 
 .sandhed{
   height: 300px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -236,9 +238,7 @@ main {
 
 /*=========FOOTER==========*/
 
-#footer {
-  
-}
+
 
 footer .links {
   display: flex;
@@ -251,6 +251,8 @@ footer .links {
 footer h1 {
   color: white;
   text-align: center;
+  background: rgb(36, 34, 34);
+  padding-top: 20px;
 }
 
 footer img {
@@ -259,28 +261,29 @@ footer img {
   color: white;
   width: 40px;
   margin: 10px;
+  stroke: white;
 }
 
 /*==============RESPONSIVIDADE=================*/
 
-@media screen and (min-width: 1024px) and (max-width: 2560px){
+@media screen and (max-width: 1024px){
   
   .bot{
     font-size: 1.2rem;
   }
 
   .box{
-    height: 380px;
+    height: 400px;
   }
   
   .informacao{
-    width: 80%;
+    width: 100%;
 
   }
 
   .redirecionamento{
     height: 400px;
-    width: 80%;
+    width: 100%;
   }
 
   .redirecionamento-box > p{
@@ -321,7 +324,7 @@ footer img {
   }
 
   .informacao{
-    width: 90%;
+    width: 100%;
   }
   
   .informaca_gif{
@@ -330,7 +333,7 @@ footer img {
   }
 
   .redirecionamento{
-    width: 90%;
+    width: 100%;
   }
 
   .redirecionamento_texto{
@@ -348,7 +351,7 @@ footer img {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px){
+@media screen and (max-width: 425px) {
   nav{
   background-color: black;
   height: 40px;
@@ -445,7 +448,3 @@ footer img {
     font-size: 0.82rem;
   }
 }
-
-
-
-
