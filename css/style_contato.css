@@ -109,13 +109,12 @@ main {
   height: 90%;
 }
 
-
 /* ================NOVO FORMULARIO========================= */
 
 form {
   margin: 5%;
-  margin-left:25% ;
-  margin-right:45% ;
+  margin-left: 25%;
+  margin-right: 45%;
   height: 500px;
 }
 
@@ -304,7 +303,6 @@ footer img {
   margin: 5px;
 }
 
-
 @keyframes rota {
   0% {
     transform: rotate(0deg);
@@ -444,7 +442,6 @@ footer img {
     font-size: 0.7rem;
   }
 }
-
 
 /*=========ANIMAÇAO SATURNO=================*/
 body .scene_saturn__ring .layer_part,
@@ -1278,6 +1275,7 @@ body .scene_saturn__ring .layer_part {
   height: 50px;
   background: #21ced2;
   transform-origin: 50% 165px;
+  margin-top: 100px;
 }
 body .scene_saturn__ring .layer_part:nth-of-type(1) {
   transform: translateY(-50%) rotate(7.2deg);
@@ -1777,14 +1775,12 @@ body .scene_saturn__ring .layer_part:nth-of-type(50) {
 }
 /*============ANIMAÇAO CANDLE========*/
 body {
-  
-  
 }
 
 .wrapper {
   position: absolute;
   left: 10%;
-  top: 98,9%;
+  top: 98, 9%;
   padding-bottom: 22px;
   transform: scale(1.5, 1.5) translate(-50%, -50%);
 }
@@ -1818,7 +1814,7 @@ body {
   width: 35px;
   height: 100px;
   background: #fff;
-  border: 3px solid #673C63;
+  border: 3px solid #673c63;
   border-bottom: 0px;
   border-radius: 3px;
   transform-origin: center right;
@@ -1827,13 +1823,14 @@ body {
   animation: expand-body 3s infinite linear;
 }
 
-.candle1__stick, .candle2__stick {
+.candle1__stick,
+.candle2__stick {
   position: absolute;
   left: 50%;
   top: 0%;
   width: 3px;
   height: 15px;
-  background: #673C63;
+  background: #673c63;
   border-radius: 8px;
   transform: translate(-50%, -100%);
 }
@@ -1844,7 +1841,8 @@ body {
   animation: stick-animation 3s infinite linear;
 }
 
-.candle1__eyes, .candle2__eyes {
+.candle1__eyes,
+.candle2__eyes {
   position: absolute;
   left: 50%;
   top: 0%;
@@ -1860,7 +1858,7 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 100%;
-  background: #673C63;
+  background: #673c63;
   transform: translate(-70%, 0%);
   animation: blink-eyes 3s infinite linear;
 }
@@ -1872,7 +1870,7 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 100%;
-  background: #673C63;
+  background: #673c63;
   transform: translate(-70%, 0%);
   animation: blink-eyes 3s infinite linear;
 }
@@ -1884,7 +1882,7 @@ body {
   width: 0px;
   height: 0px;
   border-radius: 20px;
-  background: #673C63;
+  background: #673c63;
   transform: translate(-50%, -50%);
   animation: uff 3s infinite linear;
 }
@@ -1919,7 +1917,7 @@ body {
   width: 42px;
   height: 60px;
   background: #fff;
-  border: 3px solid #673C63;
+  border: 3px solid #673c63;
   border-bottom: 0px;
   border-radius: 3px;
   transform: translate(60%, -15%);
@@ -1935,10 +1933,10 @@ body {
   width: 5px;
   height: 5px;
   display: inline-block;
-  border: 0px solid #673C63;
+  border: 0px solid #673c63;
   border-radius: 100%;
   float: left;
-  background: #673C63;
+  background: #673c63;
   transform: translate(-80%, 0%);
   animation: changeto-lower 3s infinite linear;
 }
@@ -1950,10 +1948,10 @@ body {
   width: 5px;
   height: 5px;
   display: inline-block;
-  border: 0px solid #673C63;
+  border: 0px solid #673c63;
   border-radius: 100%;
   float: left;
-  background: #673C63;
+  background: #673c63;
   transform: translate(-80%, 0%);
   animation: changeto-greater 3s infinite linear;
 }
@@ -1980,17 +1978,19 @@ body {
   height: 20px;
   background-color: red;
   border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
-  background: #FF9800;
+  background: #ff9800;
   transform: translate(-50%, -50%);
   animation: dance-fire 3s infinite linear;
 }
 
 @keyframes blink-eyes {
-  0%, 35% {
+  0%,
+  35% {
     opacity: 1;
     transform: translate(-70%, 0%);
   }
-  36%, 39% {
+  36%,
+  39% {
     opacity: 0;
     transform: translate(-70%, 0%);
   }
@@ -1998,7 +1998,8 @@ body {
     opacity: 1;
     transform: translate(-70%, 0%);
   }
-  50%, 65% {
+  50%,
+  65% {
     transform: translate(-140%, 0%);
   }
   66% {
@@ -2006,10 +2007,12 @@ body {
   }
 }
 @keyframes expand-body {
-  0%, 40% {
+  0%,
+  40% {
     transform: scale(1, 1) translate(60%, -25%);
   }
-  45%, 55% {
+  45%,
+  55% {
     transform: scale(1.1, 1.1) translate(60%, -28%);
   }
   60% {
@@ -2026,11 +2029,13 @@ body {
   }
 }
 @keyframes uff {
-  0%, 40% {
+  0%,
+  40% {
     width: 0px;
     height: 0px;
   }
-  50%, 54% {
+  50%,
+  54% {
     width: 15px;
     height: 15px;
     left: 30%;
@@ -2052,15 +2057,21 @@ body {
   }
 }
 @keyframes change-background {
-  0%, 59%, 98%, 100% {
-    background: #FEF4AD;
+  0%,
+  59%,
+  98%,
+  100% {
+    background: #fef4ad;
   }
-  61%, 97% {
-    background: #F8AE39;
+  61%,
+  97% {
+    background: #f8ae39;
   }
 }
 @keyframes move-left {
-  0%, 59%, 100% {
+  0%,
+  59%,
+  100% {
     width: 0px;
     left: 40%;
   }
@@ -2074,7 +2085,9 @@ body {
   }
 }
 @keyframes move-top {
-  0%, 64%, 100% {
+  0%,
+  64%,
+  100% {
     width: 0px;
     height: 0px;
     top: 0%;
@@ -2092,11 +2105,13 @@ body {
   }
 }
 @keyframes shake-left {
-  0%, 40% {
+  0%,
+  40% {
     left: 20%;
     transform: translate(60%, -15%);
   }
-  50%, 54% {
+  50%,
+  54% {
     left: 20%;
     transform: translate(60%, -15%);
   }
@@ -2120,14 +2135,14 @@ body {
     left: 20%;
     transform: scale(1.15, 0.85) translate(60%, -15%);
     background: #fff;
-    border-color: #673C63;
+    border-color: #673c63;
   }
   91% {
     left: 20%;
     transform: scale(1.18, 0.82) translate(60%, -10%);
-    background: #F44336;
-    border-color: #F44336;
-    box-shadow: -2px 0px 0px #F44336 inset;
+    background: #f44336;
+    border-color: #f44336;
+    box-shadow: -2px 0px 0px #f44336 inset;
   }
   92% {
     left: 20%;
@@ -2143,12 +2158,14 @@ body {
   }
 }
 @keyframes stick-animation {
-  0%, 40% {
+  0%,
+  40% {
     left: 50%;
     top: 0%;
     transform: translate(-50%, -100%);
   }
-  50%, 54% {
+  50%,
+  54% {
     left: 50%;
     top: 0%;
     transform: translate(-50%, -100%);
@@ -2178,7 +2195,8 @@ body {
     top: 0%;
     transform: rotateZ(5deg) translate(-50%, -100%);
   }
-  74%, 84% {
+  74%,
+  84% {
     left: 50%;
     top: 0%;
     transform: rotateZ(0deg) translate(-50%, -100%);
@@ -2193,54 +2211,87 @@ body {
   }
 }
 @keyframes expand-light {
-  10%, 29%, 59%, 89% {
+  10%,
+  29%,
+  59%,
+  89% {
     transform: translate(-25%, -50%) scale(0, 0);
     border: 2px solid rgba(255, 255, 255, 0);
   }
-  90%, 20%, 50% {
+  90%,
+  20%,
+  50% {
     transform: translate(-25%, -50%) scale(1, 1);
   }
-  95%, 96%, 26%, 27%, 56%, 57% {
+  95%,
+  96%,
+  26%,
+  27%,
+  56%,
+  57% {
     transform: translate(-25%, -50%) scale(2, 2);
     border: 2px solid rgba(255, 255, 255, 0.5);
   }
-  0%, 28%, 58%, 100% {
+  0%,
+  28%,
+  58%,
+  100% {
     transform: translate(-25%, -50%) scale(2.5, 2.5);
     border: 2px solid rgba(255, 255, 255, 0.2);
   }
 }
 @keyframes dance-fire {
-  59%, 89% {
+  59%,
+  89% {
     left: 40%;
     width: 0px;
     height: 0px;
   }
-  90%, 0%, 7%, 15%, 23%, 31%, 39%, 47%, 55% {
+  90%,
+  0%,
+  7%,
+  15%,
+  23%,
+  31%,
+  39%,
+  47%,
+  55% {
     left: 40.8%;
     width: 16px;
     height: 20px;
-    background: #FFC107;
+    background: #ffc107;
   }
-  94%, 3%, 11%, 19%, 27%, 35%, 43%, 51%, 58% {
+  94%,
+  3%,
+  11%,
+  19%,
+  27%,
+  35%,
+  43%,
+  51%,
+  58% {
     left: 41.2%;
     width: 16px;
     height: 20px;
-    background: #FF9800;
+    background: #ff9800;
   }
 }
 @keyframes changeto-lower {
-  0%, 70%, 90% {
+  0%,
+  70%,
+  90% {
     padding: 0px;
     display: inline-block;
     border-radius: 100%;
-    background: #673C63;
+    background: #673c63;
     border-width: 0 0 0 0;
-    border: 0px solid #673C63;
+    border: 0px solid #673c63;
     transform: translate(-90%, 0%);
   }
-  71%, 89% {
+  71%,
+  89% {
     background: none;
-    border: solid #673C63;
+    border: solid #673c63;
     border-radius: 0px;
     border-width: 0 2px 2px 0;
     display: inline-block;
@@ -2252,20 +2303,23 @@ body {
   }
 }
 @keyframes changeto-greater {
-  0%, 70%, 90% {
+  0%,
+  70%,
+  90% {
     top: 50%;
     padding: 0px;
     display: inline-block;
     border-radius: 100%;
-    background: #673C63;
+    background: #673c63;
     border-width: 0 0 0 0;
-    border: 0px solid #673C63;
+    border: 0px solid #673c63;
     transform: translate(-80%, 0%);
   }
-  71%, 89% {
+  71%,
+  89% {
     top: 30%;
     background: none;
-    border: solid #673C63;
+    border: solid #673c63;
     border-radius: 0px;
     border-width: 0 2px 2px 0;
     display: inline-block;
