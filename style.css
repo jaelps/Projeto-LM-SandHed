@@ -2,26 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
 }
 
-html, body {
+body {
   height: 100%;
   width: 100%;
   background-color: #2f0436;
 }
 
-p {
-  font-family: 'Inconsolata', monospace;
-}
-
-/*nav -- inicio*/
-
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/*======HEADER=======*/
 
 nav{
   background-color: black;
@@ -57,14 +47,14 @@ nav{
   transition-duration: 1s;
 }
 
-.primeriro, .segundo, .terceiro{
+.primeiro, .segundo, .terceiro{
   text-decoration: none;
   color: white;
 }
 
-/*nav -- fim*/
+/*========BANNER PRINCIPAL========*/
 
-/*Ilustração - fundo inicio*/
+
 .box{
   background-image: url(https://i.pinimg.com/originals/a2/94/b5/a294b593769b6bf61b55c152032e7459.jpg);
   background-size: 100%;
@@ -94,9 +84,15 @@ nav{
   text-align: center;
 }
 
-/*Ilustração - fundo fim*/
+/*==============INFORMAÇÕES=================*/
 
-.informacao{
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informacao {
   background-color: #0a0410;
   display: flex;
   flex-direction: column;
@@ -115,22 +111,12 @@ nav{
   border-radius: 50% 50%;
   width: 100px;
   height: 100px;
-  
 }
 
 .informaca_tex{
   width: 50%;
   color: white;
   font-size: 1rem;
-  
-}
-
-.pr{
-  margin: 35px 0;
-}
-
-.tr{
-  margin: 30px 0;
 }
 
 .redirecionamento{
@@ -164,7 +150,6 @@ nav{
   height: 130px;
   margin-left: 90px;
   font-weight: bold;
-
 }
 
 .redirecionamento-img{
@@ -204,6 +189,8 @@ nav{
   margin: auto;
 }
 
+/*==============BANNER GIF==================*/
+
 .sandhed{
   height: 300px;
   display: flex;
@@ -219,8 +206,8 @@ nav{
 .sandhed > h2 {
   text-shadow: 2px 2px #eeb927,-2px -2px #fb5050 ;
   font-weight: bold;
-  font-family: 'Russo One', sans-serif;
   text-align: center;
+  font-family: 'Russo One', sans-serif;
 }
 
 .sandhed_box{
@@ -247,11 +234,10 @@ nav{
   color: green;
 }
 
-  #footer {
-  background: rgb(36, 34, 34);
+/*=========FOOTER==========*/
+
+#footer {
   
-  border: white 2px solid;
-  padding: 40px;
 }
 
 footer .links {
@@ -259,11 +245,12 @@ footer .links {
   align-items: center;
   justify-content: center;
   background: rgb(36, 34, 34);
+  padding: 20px;
 }
 
 footer h1 {
-  display: block;
-
+  color: white;
+  text-align: center;
 }
 
 footer img {
@@ -274,7 +261,7 @@ footer img {
   margin: 10px;
 }
 
-/* reservado para responsividade*/
+/*==============RESPONSIVIDADE=================*/
 
 @media screen and (min-width: 1024px) and (max-width: 2560px){
   
