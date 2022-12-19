@@ -367,22 +367,44 @@ footer img {
   fill: white;
   color: white;
   width: 40px;
+  height: 40px;
   margin: 10px;
   stroke: white;
 }
 
 .fim {
   display: flex;
-  border: 1px solid #121212;
-  background: black;
-  height: 40px;
+  background: rgb(36, 34, 34);
+  height: 65px;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.rgb {
+  background: linear-gradient(to right, #a650fb, #60fb7a);
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+  animation: coresDancantes 2s linear infinite;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-inline: 10px;
+}
+
+@keyframes coresDancantes {
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .footer-icon {
   margin: 5px;
+  display: flex;
 }
 
 .fab {
@@ -464,12 +486,12 @@ footer img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
 
 html,
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: #38216b;
 }
 
@@ -493,9 +515,10 @@ body {
   background: #303030;
 }
 
+
 form {
   margin: auto;
-  width: 100%;
+  width: 300px;
   height: 500px;
 }
 
@@ -505,7 +528,7 @@ form {
 
 .conteudo {
   height: 510;
-  width: 80%;
+  width: 310px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -523,7 +546,9 @@ form {
   }
 
   .fim {
-    height: 25px;
+    height: 65px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .fab {
@@ -531,7 +556,7 @@ form {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (max-width: 425px) {
   nav {
     background-color: black;
     height: 40px;
@@ -549,18 +574,17 @@ form {
   .box {
     background-size: 100%;
     width: 100%;
-
     height: 120px;
+  }
+
+  .form-container {
+    width: 100%;
   }
 
   .formulario {
     padding: 20px 0;
     width: 80%;
     height: 70%;
-  }
-
-  .fim {
-    height: 18px;
   }
 
   .fab {
@@ -1913,10 +1937,9 @@ body .scene_saturn__ring .layer_part:nth-of-type(50) {
   left: 50%;
   top: 50%;
   width: 250px;
-  height: 5px;
-  background: black;
+  height: 20px;
+  background: rgb(36, 34, 34);
   transform: translate(-50%, -50%);
-  box-shadow: 0px 2px 5px #111;
   z-index: 2;
 }
 
