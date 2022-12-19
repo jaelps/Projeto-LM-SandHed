@@ -39,19 +39,77 @@ nav {
   list-style: none;
 }
 
-.primeiro:hover {
-  filter: brightness(1.1);
-  cursor: pointer;
-}
 
-.primeiro,
-.segundo,
-.terceiro {
+
+.contat {
   text-decoration: none;
-  color: white;
+  color: #a650fb;
+  position: relative;
+  padding: 5px 25px;
+  margin: 45px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 
-/*nav -- fim*/
+.contat::before {
+  content: " ";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #a650fb;
+  border-left: 2px solid #a650fb;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.contat::after {
+  content: " ";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #a650fb;
+  border-right: 2px solid #a650fb;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.contat:hover::before, .contat:hover::after {
+  width: 100%;
+  height: 100%;
+  transition-delay: 0s;
+}
+
+.contat:hover {
+  background: #a650fb;
+  color: #60fb7a;
+  box-shadow: 0 0 16px #a650fb;
+  transition-delay: 0.5s;
+}
+
+/*=================SCROLL==================*/
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #a650fb,
+    #60fb7a
+  );
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #474747;
+}
 
 /*Ilustração - fundo inicio*/
 .box {
@@ -112,14 +170,33 @@ main {
 /* ================NOVO FORMULARIO========================= */
 
 form {
-  margin: 5%;
-  margin-left: 25%;
-  margin-right: 45%;
+  width: 400px;
+  border-radius: 10px;
   height: 500px;
 }
 
-form:hover {
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #a650fb, #60fb7a);
+  animation: coresDancantes 2s linear infinite;
+  width: 410px;
+  height: 510px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+  margin: 5%;
+  margin-left: 25%;
+  margin-right: 45%;
 }
+
+@keyframes coresDancantes {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
 
 input,
 textarea {
@@ -152,6 +229,16 @@ textarea {
   color: white;
   text-align: left;
 }
+
+form button {
+  background-color: black;
+  width: 120px;
+  height: 40px;
+  align-self: center;
+  cursor: pointer;
+  border: none;
+}
+/*
 .form-container form button {
   border: none;
   background-color: rgb(0, 0, 0);
@@ -170,6 +257,7 @@ textarea {
   color: rgb(0, 0, 0);
   transition: 0.5s;
 }
+*/
 
 /* ANTIGO FORMULARIO DESATIVADO*/
 
@@ -257,7 +345,7 @@ label {
 
 /*=========FOOTER==========*/
 
-/*
+
 
 footer .links {
   display: flex;
@@ -281,7 +369,7 @@ footer img {
   width: 40px;
   margin: 10px;
   stroke: white;
-}*/
+}
 
 .fim {
   display: flex;
@@ -323,7 +411,7 @@ footer img {
 
 /* reservado para responsividade*/
 
-@media screen and (min-width: 1024px) and (max-width: 2560px) {
+@media screen and (max-width: 1024px) {
   nav {
     display: flex;
   }
@@ -377,14 +465,51 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
-  .formulario > h1 {
-    width: 200px;
-  }
 
-  .formulario {
-    height: 80%;
-    width: 50%;
-  }
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #38216b;
+}
+
+.scene, .wrapper {
+  display: none;
+}
+
+  /*=================SCROLL==================*/
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #545454;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #303030;
+}
+
+form {
+  margin: auto;
+  width: 100%;
+  height: 500px;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.conteudo {
+  height: 510;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
   .name,
   .fone,
@@ -1774,8 +1899,6 @@ body .scene_saturn__ring .layer_part:nth-of-type(50) {
   }
 }
 /*============ANIMAÇAO CANDLE========*/
-body {
-}
 
 .wrapper {
   position: absolute;

@@ -39,7 +39,7 @@ nav{
 }
 
 .bot:hover{
-  padding:10px 10px;
+  padding: 10px 10px;
   border: 1px solid #8c24f5;
   background: black;
   border-radius: 5px;
@@ -47,9 +47,54 @@ nav{
   transition-duration: 1s;
 }
 
-.primeiro, .segundo, .terceiro{
+.contat {
   text-decoration: none;
-  color: white;
+  color: #a650fb;
+  position: relative;
+  padding: 5px 25px;
+  margin: 45px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.contat::before {
+  content: " ";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #a650fb;
+  border-left: 2px solid #a650fb;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.contat::after {
+  content: " ";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #a650fb;
+  border-right: 2px solid #a650fb;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.contat:hover::before, .contat:hover::after {
+  width: 100%;
+  height: 100%;
+  transition-delay: 0s;
+}
+
+.contat:hover {
+  background: #a650fb;
+  color: #60fb7a;
+  box-shadow: 0 0 16px #a650fb;
+  transition-delay: 0.5s;
 }
 
 /*========BANNER PRINCIPAL========*/
@@ -84,6 +129,26 @@ nav{
   text-align: center;
 }
 
+/*=================SCROLL==================*/
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #a650fb,
+    #60fb7a
+  );
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #474747;
+}
+
 /*==============INFORMAÇÕES=================*/
 
 main {
@@ -96,6 +161,7 @@ main {
   background-color: #0a0410;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .informacao_td{
@@ -120,7 +186,7 @@ main {
 }
 
 .redirecionamento{
-  background: #085558;
+  background: #296433;
   padding: 10px 0;
   display: flex;
   align-items: center;
@@ -134,11 +200,33 @@ main {
     margin: 20px;
     align-items: center;
     justify-content: space-around;
-    
 }
 
-.redirecionamento_vidio{
-  margin-right: 90px;
+iframe {
+  height: 200px;
+  width: auto;
+  border-radius: 6px;
+  padding: 0;
+  border-top: 6px solid #a650fb;
+  border-left: 6px solid #a650fb;
+  border-bottom: 6px solid #60fb7a;
+  border-right: 6px solid #60fb7a;
+}
+
+.conteudo {
+  background: linear-gradient(to right, #a650fb, #60fb7a);
+  width: 310px;
+  height: 140px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+  animation: coresDancantes 2s linear infinite;
+}
+
+@keyframes coresDancantes {
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .redirecionamento_texto{
@@ -206,7 +294,7 @@ main {
 }
 
 .sandhed > h2 {
-  text-shadow: 2px 2px #eeb927,-2px -2px #fb5050 ;
+  text-shadow: 2px 2px #60fb7a,-2px -2px #a650fb;
   font-weight: bold;
   text-align: center;
   font-family: 'Russo One', sans-serif;
@@ -240,7 +328,7 @@ main {
 
 
 
-footer .links {
+footer #links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,6 +341,7 @@ footer h1 {
   text-align: center;
   background: rgb(36, 34, 34);
   padding-top: 20px;
+  
 }
 
 footer img {
@@ -278,7 +367,6 @@ footer img {
   
   .informacao{
     width: 100%;
-
   }
 
   .redirecionamento{
@@ -322,6 +410,22 @@ footer img {
     flex-direction: column;
     align-items: center;
   }
+
+  /*=================SCROLL==================*/
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #545454;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #303030;
+}
 
   .informacao{
     width: 100%;
