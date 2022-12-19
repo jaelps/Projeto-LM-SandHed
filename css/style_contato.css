@@ -5,7 +5,6 @@
   font-family: 'Inconsolata', monospace;
 }
 
-html,
 body {
   height: 100%;
   width: 100%;
@@ -486,7 +485,7 @@ footer img {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1024px) {
 
 html,
 body {

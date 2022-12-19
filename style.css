@@ -5,10 +5,15 @@
   font-family: 'Inconsolata', monospace;
 }
 
+html {
+  margin: 0;
+}
+
+html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #2f0436;
+  background-color: rgb(36, 34, 34);
 }
 
 /*======HEADER=======*/
@@ -243,7 +248,6 @@ main {
   border-radius: 100%;
   margin: 5px;
   display: flex;
-  
 }
 
 .far{
@@ -302,15 +306,18 @@ main {
   background: rgb(36, 34, 34);
   height: 150px;
   margin-bottom: 0;
-  border: none;
+  border: 0;
+  line-height: 0;
 }
 
 footer #links {
   align-items: center;
-  margin: 15px;
+  padding-bottom: 20px;
 }
 
 footer h1 {
+  font-weight: 900;
+  text-transform: uppercase;
   color: white;
   text-align: center;
   padding-top: 20px;
@@ -394,6 +401,7 @@ footer img {
 }
 
 @media screen and (max-width: 850px){
+
   .main{
     display: flex;
     flex-direction: column;
@@ -458,6 +466,7 @@ footer img {
 }
 
 @media screen and (max-width: 425px) {
+
   nav{
   background-color: black;
   height: 40px;
